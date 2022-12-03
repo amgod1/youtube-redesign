@@ -1,0 +1,289 @@
+.main-wrapper {
+    max-width: 1665px;
+    width: calc(100% - 223px);
+    height: auto;
+}
+
+.user-info-wrapper {
+    max-width: 1517px;
+    width: calc(100% - 144px);
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.main-img {
+    width: 50px;
+}
+
+.main-text {
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+}
+
+.slider {
+    position: relative;
+    top: 15px;
+    
+    width: 66px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-img {
+    width: 28px;
+}
+
+.slider-img:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.user-videos {
+    margin-top: 30px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    column-gap: 40px;
+}
+
+.swipe {
+    padding-right: 23px;
+    justify-content: flex-end;
+}
+
+.swipe-giant-center {
+    padding-right: 23px;
+    justify-content: center;
+}
+
+.swipe-giant-end {
+    padding-right: 23px;
+    justify-content: flex-end;
+}
+
+.video-wrapper-lil {
+    min-width: 250px;
+}
+
+.video-wrapper-lil:hover,
+.recommended-videos-item:hover {
+    cursor: pointer;
+}
+
+.video-img-lil {
+    width: inherit;
+    min-width: 250px;
+}
+
+.video-title {
+    margin-top: 6px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.video-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-info {
+    margin-top: 3px;
+    white-space: nowrap;
+
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #C2C2C2;
+}
+
+.recommended-wrapper {
+    margin-top: 40px;
+}
+
+.recommended-title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+}
+
+.slider-rec {
+    position: relative;
+    top: 5px;
+    
+    width: 66px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommended-videos {
+    overflow: hidden;
+    display: flex;
+    column-gap: 40px;
+}
+
+.recommended-videos-item {
+    width: 540px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-rec {
+    margin-top: 11px;
+}
+
+.info-rec {
+    margin-top: 3px;
+}
+
+.video-info-rec {
+    margin-top: 3px;
+    white-space: nowrap;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color:#C2C2C2;
+}
+
+.food-wrapper {
+    margin: 50px 0 15px;
+}
+
+.recommended-subtitle {
+    margin-left: 20px;
+    position: relative;
+    top: 5px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #C2C2C2;
+}
+
+.subscribe-wrapper {
+    display: flex;
+}
+
+.subscribe {
+    width: 155px;
+    height: 40px;
+    margin-right: 41px;
+
+    background: #FF0000;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 12px;
+}
+
+.subscribe:hover {
+    cursor: pointer;
+    opacity: .75;
+}
+
+.subscribe-text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1280px) {
+    .recommended-subtitle {
+        display: none;
+    }
+}
+
+@media (max-width: 1083px) {
+    .swipe {
+        padding-right: 0;
+        justify-content: flex-start;
+    }
+
+    .user-videos {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    
+    .slider,
+    .subscribe {
+        display: none;
+    }
+
+    .video-wrapper-lil {
+        width: calc(55vw - 223px);
+    }
+    
+}
+
+@media  (max-width: 834px) {
+    .main-wrapper {
+        margin: auto;
+        width: 540px;
+    }
+
+    .recommended-videos {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .dollie-blair-wrapper {
+        margin: auto;
+    }
+    
+    .slider-rec,
+    .subscribe {
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .user-info-wrapper {
+        display: none;
+    }
+
+    .user-videos {
+        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-wrapper {
+        width: auto;
+    }
+
+    .video-wrapper-lil {
+        width: 85vw;
+        min-width: 250px;
+    }
+
+    .recommended-wrapper {
+        margin-top: 30px;
+    }
+    
+    .recommended-videos-item {
+        margin-top: 0;
+        width: 85vw;
+    }
+
+    .food-wrapper {
+        margin: 30px 0 15px;
+    }
+}

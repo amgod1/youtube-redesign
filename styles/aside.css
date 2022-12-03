@@ -1,0 +1,157 @@
+.aside-wrapper {
+    min-width: 223px;
+}
+
+.aside-main {
+    height: 117px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aside-item {
+    display: flex;
+}
+
+.aside-item:hover {
+    cursor: pointer;
+}
+
+.aside-item:hover .aside-text {
+    color: #FF0000;
+}
+
+.library {
+    display: none;
+}
+
+.img-wrapper {
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.aside-img {
+    width: 20px;
+}
+
+.trending-img {
+    width: 16px;
+}
+
+.subscriptions-img {
+    width: 18px;
+}
+
+.aside-text {
+    margin-left: 13px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #898989;
+}
+
+.active-text {
+    color: #FF0000;
+}
+
+.aside-additional {
+    margin-top: 60px;
+    height: 363px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aside-subs {
+    margin-top: 58px;
+}
+
+.aside-main-text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.aside-subs-wrapper {
+    margin-top: 31px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aside-subs-item {
+    display: flex;
+    align-items: center;
+}
+
+.aside-subs-item:hover {
+    cursor: pointer;
+}
+
+.aside-subs-item:hover .aside-subs-text {
+    color: #FF0000;
+}
+
+.aside-subs-img {
+    width: 26px;
+}
+
+.aside-subs-text {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #898989;
+}
+
+.settings {
+    margin: 105px 0 40px;
+}
+
+@media (max-width: 834px) {
+    .aside-wrapper {
+        min-height: 60px;
+        border-top: solid 2px #F1F1F1;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .settings,
+    .aside-subs,
+    .aside-additional {
+        display: none;
+    }
+
+    .aside-main {
+        width: 76%;
+        height: auto;
+        margin: auto;
+
+        flex-direction: row;
+    }
+
+    .library {
+        display: flex;
+    }
+
+    .aside-item {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .aside-text {
+        margin: 5px 0 0 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .aside-text {
+        font-size: 10px;
+        line-height: 13px;
+    }
+}

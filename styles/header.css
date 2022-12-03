@@ -1,0 +1,167 @@
+.header-wrapper {
+    max-width: 96%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.burger-img {
+    width: 20px;
+    height: 17px;
+}
+
+.yt-logo-img {
+    width: 115px;
+    height: 25px;
+    margin-left: 28px;
+}
+
+.image:hover {
+    cursor: pointer;
+}
+
+.new-search {
+    width: 44px;
+    height: 44px;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    border-radius: 22px;
+}
+
+.search-input-wrapper {
+    max-width: 830px;
+    width: 45vw;
+    height: 44px;
+    margin-left: 60px;
+    overflow: hidden;
+
+    background: #EBEBEB;
+    border-radius: 22px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: calc(100% - 50px);
+    padding-left: 23px;
+
+    height: 35px;
+    border: none;
+    border-radius: 22px;
+    
+    background: #EBEBEB;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.search-input:active, 
+.search-input:hover, 
+.search-input:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.search-logo-wrapper {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #EBEBEB;
+    border-radius: 22px;
+}
+
+.new-search:hover,
+.search-logo-wrapper:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.search-logo {
+    width: 18px;
+    height: 18px;
+}
+
+.user-wrapper {
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dots {
+    width: 21px;
+    height: 21px;
+}
+
+.dots:hover {
+    cursor: pointer;
+}
+
+.user-img {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 1083px) {
+    .dots {
+        display: none;
+    }
+
+    .user-wrapper {
+        justify-content: end;
+    }
+}
+
+@media (max-width: 834px) {
+    .burger-img {
+        display: none;
+    }
+
+    .yt-logo-img {
+        margin-left: 0;
+    }
+
+    .header-wrapper {
+        margin: 20px auto;
+        max-width: 92%;
+    }
+}
+
+@media (max-width: 834px) {
+    .header-wrapper {
+        margin: 12px auto;
+        max-width: 85%;
+    }
+}
+
+@media (max-width: 600px) {
+    .search-input {
+        display: none;
+    }
+
+    .search-logo-wrapper {
+        background-color: transparent;
+    }
+    
+    .search-input-wrapper {
+        width: 44px;
+        display: none;
+    }
+
+    .new-search {
+        display: flex;
+    }
+}
